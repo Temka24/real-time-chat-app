@@ -1,0 +1,28 @@
+# Node.js болон npm-ийн файлууд
+node_modules/
+npm-debug.log
+yarn-error.log
+yarn.lock
+package-lock.json
+
+# TypeScript-ийн хөрвүүлэгдсэн файлууд
+dist/
+*.js.map
+*.tsbuildinfo
+
+# Орчны хувьсагчийн файлууд
+.env
+.env.local
+.env.development
+.env.production
+
+# Локал хөгжүүлэлтийн файлууд
+.vscode/
+.idea/
+*.log
+
+# MacOS системийн файлууд
+.DS_Store
+
+# Windows системийн файлууд
+Thumbs.db
