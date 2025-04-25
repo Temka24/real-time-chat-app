@@ -70,14 +70,14 @@ const Login: React.FC = () => {
                             required
                             placeholder='Email'
                             onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                            className="bg-transparent border border-[2px] border-[#2a1454] focus:border-pink-500/70 focus:outline focus:outline-pink-500/70 placeholder:text-joke/50 text-joke rounded-[6px] px-[20px] py-[8px] w-[100%]"
+                            className="bg-transparent border-[2px] border-[#2a1454] focus:border-pink-500/70 focus:outline focus:outline-pink-500/70 placeholder:text-joke/50 text-joke rounded-[6px] px-[20px] py-[8px] w-[100%]"
                         />
                         <input
                             type={`${pass_visible ? "text" : "password"}`}
                             required
                             placeholder='Password'
                             onChange={(e) => setFormData({ ...formData, password: e.target.value })}
-                            className="bg-transparent border border-[2px] mt-[20px] border-[#2a1454] focus:border-pink-500/70 focus:outline focus:outline-pink-500/70 placeholder:text-joke/50 text-joke rounded-[6px] px-[20px] py-[8px] w-[100%]"
+                            className="bg-transparent border-[2px] mt-[20px] border-[#2a1454] focus:border-pink-500/70 focus:outline focus:outline-pink-500/70 placeholder:text-joke/50 text-joke rounded-[6px] px-[20px] py-[8px] w-[100%]"
                         />
                         <div onClick={() => setPass_visible(!pass_visible)} className='translate-x-[210px] translate-y-[-35px] text-pink-500 cursor-pointer absolute'>
                             {pass_visible ? <VisibilityIcon /> : <VisibilityOffIcon />}
@@ -86,7 +86,7 @@ const Login: React.FC = () => {
                             type="button"
                             value={isLoading ? "...loading" : "Login"}
                             onClick={handleLogin}
-                            className="text-white/70 font-[700] rounded-[20px] px-[25px] py-[10px] mt-[20px] cursor-pointer capitalize bg-gradient-to-r from-[#9500ff] via-[#2a1454] to-[#9500ff] bg-[length:300%] cursor-pointer transition-all duration-700 hover:bg-right w-[100%]"
+                            className="text-white/70 font-[700] rounded-[20px] px-[25px] py-[10px] mt-[20px] cursor-pointer capitalize bg-gradient-to-r from-[#9500ff] via-[#2a1454] to-[#9500ff] bg-[length:300%] transition-all duration-700 hover:bg-right w-[100%]"
                         />
                     </form>
                     <div className={`${akaya.className} text-nowrap text-[20px]`}>
