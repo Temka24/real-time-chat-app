@@ -32,7 +32,7 @@ const Login: React.FC = () => {
 
             setIsLoading(true)
             console.log(process.env.NEXT_PUBLIC_BACKEND_URL)
-            const res = await axios.post(`${process.env.NEXT_PUBLIC_BACKEND_URL}/api/login`, formData)
+            const res = await axios.post(`${process.env.NEXT_PUBLIC_BACKEND_URL}/api/login` || "https://real-time-chat-app-s4yd.onrender.com", formData)
             setIsLoading(false)
             if (!res.data.status) {
                 toast.error(res.data.msg)
