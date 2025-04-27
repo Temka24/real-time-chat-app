@@ -24,7 +24,7 @@ describe('Login Component', () => {
         jest.clearAllMocks();
     });
 
-    it('renders correctly', () => {
+    it('renders correctly okey ', () => {
         render(<Login />);
         expect(screen.getByPlaceholderText('Email')).toBeInTheDocument();
         expect(screen.getByPlaceholderText('Password')).toBeInTheDocument();
