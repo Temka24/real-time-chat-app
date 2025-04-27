@@ -12,11 +12,10 @@ test('User can login successfully', async ({ page }) => {
 
     // 2. Хэрэв "/" болсон бол тест Pass гэж үзнэ
     const [response] = await Promise.all([
-        page.waitForResponse(resp =>
-            resp.url().includes('/api/login') && resp.request().method() === 'POST'
+        page.waitForResponse(
+            (resp) => resp.url().includes('/api/login') && resp.request().method() === 'POST',
         ),
-        page.locator('input[value="Login"]').click()
-
+        page.locator('input[value="Login"]').click(),
     ]);
 
     // 2. Response статус 200 байна уу шалгах

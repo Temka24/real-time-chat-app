@@ -1,9 +1,9 @@
 // jest.config.ts
-import nextJest from 'next/jest'
+import nextJest from 'next/jest';
 
 const createJestConfig = nextJest({
     dir: './',
-})
+});
 
 const customJestConfig = {
     setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],
@@ -11,6 +11,6 @@ const customJestConfig = {
     moduleNameMapper: {
         '^@/(.*)$': '<rootDir>/src/$1', // optional if using alias
     },
-}
+};
 
-export default createJestConfig(customJestConfig)
+export default createJestConfig(customJestConfig);

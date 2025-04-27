@@ -7,7 +7,6 @@ const useSocket = (url: string) => {
     const [socket, setSocket] = useState<Socket | null>(null);
     const [status, setStatus] = useState<SocketStatus>('disconnected');
 
-
     useEffect(() => {
         const socketIo = io(url, {
             reconnection: true,
