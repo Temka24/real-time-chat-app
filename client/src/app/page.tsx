@@ -169,7 +169,7 @@ const ChatPage: React.FC = () => {
                                 <Image src="/logo.svg" alt="logo" height={40} width={40} />
                                 <p className="font-[700] text-[20px]">SNAPPY</p>
                             </div>
-                            <div className="h-[70%] w-full overflow-y-scroll scrollbar-thumb-rounded-full scrollbar-thin scrollbar-track-rounded-full scrollbar scrollbar-thumb-[#8750f7] scrollbar-track-[#2a1454] border border-[0.5px] border-transparent border-t-violet-900 flex flex-col items-center justify-start pt-[20px] mt-[20px] gap-[10px]">
+                            <div className="h-[70%] w-full overflow-y-scroll scrollbar-thumb-rounded-full scrollbar-thin scrollbar-track-rounded-full scrollbar scrollbar-thumb-[#8750f7] scrollbar-track-[#2a1454] border-[0.5px] border-transparent border-t-violet-900 flex flex-col items-center justify-start pt-[20px] mt-[20px] gap-[10px]">
                                 {users?.map((user: User, i: number) => (
                                     <div
                                         key={i}
