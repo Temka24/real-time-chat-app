@@ -100,7 +100,7 @@ const Login: React.FC = () => {
                         />
                     </form>
                     <div className={`${akaya.className} text-nowrap text-[20px]`}>
-                        Don't have an account ?{' '}
+                        Don't have an account ? {' '}
                         <span
                             onClick={() => router.push('/signup')}
                             className="text-joke cursor-pointer"
